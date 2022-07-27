@@ -2,6 +2,7 @@ import 'package:daxno_tech_app/Routes/app_pages.dart';
 import 'package:daxno_tech_app/Screens/Profile/Widgets/row_profile_info.dart';
 import 'package:daxno_tech_app/Utils/colors.dart';
 import 'package:daxno_tech_app/Utils/constant_text.dart';
+import 'package:daxno_tech_app/Utils/images.dart';
 import 'package:daxno_tech_app/Utils/style.dart';
 import 'package:daxno_tech_app/Widgets/App%20Bar/View/app_bar.dart';
 import 'package:flutter/material.dart';
@@ -38,21 +39,21 @@ class Profile extends StatelessWidget {
                     radius: 30,
                     child: ClipRect(
                       child: Image.asset(
-                        "Assets/Images/userImage.png",
+                        CustomImages.userProfileImage,
                       ),
                     ),
                   ),
                   title: Text(
                     ConstantText.user12345Text,
                     style: TextStyle(
-                        fontSize: MediaQuery.of(context).size.width * 0.072,
-                        color: CustomColors.greenColor), //26
+                      fontSize: MediaQuery.of(context).size.width * 0.072,
+                      color: CustomColors.greenColor,
+                    ), //26
                   ),
                   subtitle: Text(
                     ConstantText.userEmailText,
-                    style: TextStyle(
+                    style: Style.whiteColorText.copyWith(
                       fontSize: MediaQuery.of(context).size.width * 0.050, //18
-                      color: CustomColors.whiteColor,
                     ),
                   ),
                 ),
@@ -138,10 +139,15 @@ class Profile extends StatelessWidget {
               SizedBox(
                 height: MediaQuery.of(context).size.height * 0.018,
               ),
-              RowProfileInfo(
-                icon: Icons.settings_power,
-                text: ConstantText.logoutText,
-                iconColor: Colors.transparent,
+              GestureDetector(
+                onTap: () {
+                  Get.toNamed(Routes.signIn);
+                },
+                child: RowProfileInfo(
+                  icon: Icons.settings_power,
+                  text: ConstantText.logoutText,
+                  iconColor: Colors.transparent,
+                ),
               ),
               SizedBox(
                 height: MediaQuery.of(context).size.height * 0.018, //13

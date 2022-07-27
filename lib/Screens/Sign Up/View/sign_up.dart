@@ -1,4 +1,5 @@
 import 'package:daxno_tech_app/Utils/custom_textField.dart';
+import 'package:daxno_tech_app/Utils/images.dart';
 import 'package:daxno_tech_app/Utils/social_login_buttons.dart';
 import 'package:daxno_tech_app/Utils/style.dart';
 import 'package:flutter/material.dart';
@@ -34,10 +35,9 @@ class SignUp extends StatelessWidget {
                 Center(
                   child: Text(
                     ConstantText.yourSkinJourneyStartHereText,
-                    style: TextStyle(
-                      color: CustomColors.whiteColor,
-                      fontSize: MediaQuery.of(context).size.width * 0.056,
-                    ), //20
+                    style: Style.whiteColorText.copyWith(
+                      fontSize: MediaQuery.of(context).size.width * 0.056, //20
+                    ),
                   ),
                 ),
                 SizedBox(
@@ -117,14 +117,14 @@ class SignUp extends StatelessWidget {
                 ),
                 SocialButtons(
                   buttonText: ConstantText.signUpWithGoogleText,
-                  imagePath: "Assets/Images/googleLogo.png",
+                  imagePath: CustomImages.googleLogoImage,
                 ),
                 SizedBox(
                   height: MediaQuery.of(context).size.height * 0.009, //6
                 ),
                 SocialButtons(
                   buttonText: ConstantText.signUpWithFacebookText,
-                  imagePath: "Assets/Images/facebookLogo.png",
+                  imagePath: CustomImages.facebookLogoImage,
                 ),
                 SizedBox(
                   height: MediaQuery.of(context).size.height * 0.016, //25
@@ -136,17 +136,16 @@ class SignUp extends StatelessWidget {
                   child: Text.rich(
                     TextSpan(
                       text: ConstantText.alreadyHaveAnAccountText,
-                      style: TextStyle(
-                        color: CustomColors.whiteColor,
+                      style: Style.whiteColorText.copyWith(
                         fontSize: MediaQuery.of(context).size.width * 0.039,
                       ),
                       children: <InlineSpan>[
                         TextSpan(
                           text: ConstantText.signInText,
                           style: TextStyle(
-                              fontSize:
-                                  MediaQuery.of(context).size.width * 0.039,
-                              color: CustomColors.blueColor),
+                            fontSize: MediaQuery.of(context).size.width * 0.039,
+                            color: CustomColors.blueColor,
+                          ),
                         )
                       ],
                     ),

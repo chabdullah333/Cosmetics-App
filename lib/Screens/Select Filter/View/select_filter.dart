@@ -1,6 +1,7 @@
 import 'package:daxno_tech_app/Screens/Select%20Filter/Controller/select_filter_controller.dart';
 import 'package:daxno_tech_app/Utils/colors.dart';
 import 'package:daxno_tech_app/Utils/constant_text.dart';
+import 'package:daxno_tech_app/Utils/images.dart';
 import 'package:daxno_tech_app/Utils/style.dart';
 import 'package:daxno_tech_app/Widgets/App%20Bar/View/app_bar.dart';
 import 'package:flutter/material.dart';
@@ -29,7 +30,7 @@ class SelectFilter extends StatelessWidget {
                       height: MediaQuery.of(context).size.height * 0.059, //43
                     ),
                     Image.asset(
-                      "Assets/Images/applyFilterUserImage.png",
+                      CustomImages.selectFilterUserImage,
                     ),
                     SizedBox(
                       height: MediaQuery.of(context).size.height * 0.048, //35
@@ -81,7 +82,8 @@ class SelectFilter extends StatelessWidget {
                                       borderRadius: BorderRadius.circular(10),
                                     ),
                                     child: Image.asset(
-                                        "Assets/Images/applyFilterUserImage.png"),
+                                      CustomImages.selectFilterUserImage,
+                                    ),
                                   ),
                                   SizedBox(
                                     height: MediaQuery.of(context).size.height *

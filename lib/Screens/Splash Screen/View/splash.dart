@@ -1,3 +1,5 @@
+import 'package:daxno_tech_app/Utils/images.dart';
+import 'package:daxno_tech_app/Utils/style.dart';
 import 'package:flutter/material.dart';
 
 class Splash extends StatelessWidget {
@@ -8,17 +10,12 @@ class Splash extends StatelessWidget {
     return Container(
       height: MediaQuery.of(context).size.height,
       width: MediaQuery.of(context).size.width,
-      decoration: const BoxDecoration(
-        image: DecorationImage(
-          image: AssetImage("Assets/Images/backgroundImage.png"),
-          fit: BoxFit.fill,
-        ),
-      ),
+      decoration: Style.backgroundImageBoxDecoration,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Image.asset("Assets/Images/apothogy-text.png"),
+          Image.asset(CustomImages.apothogyTextImage),
         ],
       ),
     );

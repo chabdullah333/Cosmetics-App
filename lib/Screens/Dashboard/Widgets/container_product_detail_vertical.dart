@@ -1,3 +1,4 @@
+import 'package:daxno_tech_app/Utils/images.dart';
 import 'package:flutter/material.dart';
 import '../../../Utils/colors.dart';
 
@@ -46,11 +47,11 @@ class ContainerProductDetailVertical extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Image.asset("Assets/Images/star.png"),
-                  Image.asset("Assets/Images/star.png"),
-                  Image.asset("Assets/Images/star.png"),
-                  Image.asset("Assets/Images/star.png"),
-                  Image.asset("Assets/Images/star.png"),
+                  Image.asset(CustomImages.ratingStarImage),
+                  Image.asset(CustomImages.ratingStarImage),
+                  Image.asset(CustomImages.ratingStarImage),
+                  Image.asset(CustomImages.ratingStarImage),
+                  Image.asset(CustomImages.ratingStarImage),
                 ],
               ),
               SizedBox(

@@ -3,6 +3,7 @@ import 'package:daxno_tech_app/Screens/Dashboard/Widgets/container_product_detai
 import 'package:daxno_tech_app/Screens/Dashboard/Widgets/container_product_detail_vertical.dart';
 import 'package:daxno_tech_app/Utils/colors.dart';
 import 'package:daxno_tech_app/Utils/constant_text.dart';
+import 'package:daxno_tech_app/Utils/images.dart';
 import 'package:daxno_tech_app/Utils/style.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -52,7 +53,7 @@ class Dashboard extends StatelessWidget {
                         onTap: () {
                           Get.toNamed(Routes.orderPreviews);
                         },
-                        child: Image.asset("Assets/Images/shopping-cart.png"),
+                        child: Image.asset(CustomImages.shoppingCartImage),
                       ),
                     ],
                   ),
@@ -78,13 +79,13 @@ class Dashboard extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     ContainerProductDetailVertical(
-                      image: "Assets/Images/oilProduct.png",
+                      image: CustomImages.oilImage,
                       productDescription:
                           ConstantText.drAndrewWeilForOriginText,
                       productPrice: ConstantText.rs1000Text,
                     ),
                     ContainerProductDetailVertical(
-                      image: "Assets/Images/facewash.png",
+                      image: CustomImages.faceWashImage,
                       productDescription: ConstantText.nufaceByCarolCoreText,
                       productPrice: ConstantText.rs2000Text,
                     ),

@@ -1,3 +1,4 @@
+import 'package:daxno_tech_app/Utils/images.dart';
 import 'package:flutter/material.dart';
 import 'colors.dart';
 
@@ -6,9 +7,9 @@ class Style {
     color: CustomColors.whiteColor,
     borderRadius: BorderRadius.circular(18),
   );
-  static BoxDecoration backgroundImageBoxDecoration = const BoxDecoration(
+  static BoxDecoration backgroundImageBoxDecoration = BoxDecoration(
     image: DecorationImage(
-      image: AssetImage("Assets/Images/backgroundImage.png"),
+      image: AssetImage(CustomImages.backgroundImage),
       fit: BoxFit.fill,
     ),
   );
@@ -21,6 +22,14 @@ class Style {
     borderRadius: BorderRadius.circular(16),
     color: CustomColors.greenColor,
   );
+  static BoxDecoration minusCounterBoxDecoration = BoxDecoration(
+    border: Border.all(
+      color: CustomColors.doveTextColor,
+    ),
+    borderRadius: BorderRadius.circular(6),
+  );
   static TextStyle greenColorText =
       TextStyle(color: CustomColors.greenColor, fontSize: 14);
+  static TextStyle whiteColorText =
+      TextStyle(color: CustomColors.whiteColor, fontSize: 14);
 }

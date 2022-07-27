@@ -9,10 +9,10 @@ import '../../../Screens/Dashboard/View/dashboard.dart';
 class BottomNavigationBarController extends GetxController {
   int currentindex = 0;
   final List<Widget> children = [
-    Dashboard(),
-    SignUp(),
-    WishList(),
-    Profile(),
+    const Dashboard(),
+    const WishList(),
+    const WishList(),
+    const Profile(),
 
     //FIXME:before ServicesWidget(),
     // Archives(),

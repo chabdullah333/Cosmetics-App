@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../../../Utils/colors.dart';
 
 class RepeatedAppBar extends StatelessWidget with PreferredSizeWidget {
@@ -10,13 +9,18 @@ class RepeatedAppBar extends StatelessWidget with PreferredSizeWidget {
     return AppBar(
       title: Text(
         appBarTitle,
-        style: const TextStyle(color: CustomColors.blackColor),
+        style: const TextStyle(
+          color: CustomColors.blackColor,
+        ),
       ),
       centerTitle: true,
       backgroundColor: CustomColors.greenColor,
+      iconTheme: const IconThemeData(
+        color: CustomColors.blackColor,
+      ),
     );
   }
 
   @override
-  Size get preferredSize => Size.fromHeight(55);
+  Size get preferredSize => const Size.fromHeight(55);
 }

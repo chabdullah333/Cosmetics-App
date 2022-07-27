@@ -2,6 +2,7 @@ import 'package:daxno_tech_app/Screens/Edit%20Account/Widgets/row_static_text.da
 import 'package:daxno_tech_app/Screens/Edit%20Account/Widgets/text_field.dart';
 import 'package:daxno_tech_app/Utils/colors.dart';
 import 'package:daxno_tech_app/Utils/constant_text.dart';
+import 'package:daxno_tech_app/Utils/images.dart';
 import 'package:daxno_tech_app/Widgets/App%20Bar/View/app_bar.dart';
 import 'package:flutter/material.dart';
 import '../../../Utils/style.dart';
@@ -35,7 +36,7 @@ class EditAccount extends StatelessWidget {
                   child: CircleAvatar(
                     radius: 40,
                     child: ClipRect(
-                      child: Image.asset("Assets/Images/userImage.png"),
+                      child: Image.asset(CustomImages.userProfileImage),
                     ),
                   ),
                 ),

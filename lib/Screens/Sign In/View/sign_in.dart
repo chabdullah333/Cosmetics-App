@@ -2,10 +2,10 @@ import 'package:daxno_tech_app/Routes/app_pages.dart';
 import 'package:daxno_tech_app/Utils/colors.dart';
 import 'package:daxno_tech_app/Utils/constant_text.dart';
 import 'package:daxno_tech_app/Utils/custom_textField.dart';
+import 'package:daxno_tech_app/Utils/images.dart';
 import 'package:daxno_tech_app/Utils/social_login_buttons.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
 import '../../../Utils/style.dart';
 
 class SignIn extends StatelessWidget {
@@ -103,14 +103,14 @@ class SignIn extends StatelessWidget {
                 ),
                 SocialButtons(
                   buttonText: ConstantText.signInWithGoogleText,
-                  imagePath: "Assets/Images/googleLogo.png",
+                  imagePath: CustomImages.googleLogoImage,
                 ),
                 SizedBox(
                   height: MediaQuery.of(context).size.height * 0.009, //6
                 ),
                 SocialButtons(
                   buttonText: ConstantText.signInWithFacebookText,
-                  imagePath: "Assets/Images/facebookLogo.png",
+                  imagePath: CustomImages.facebookLogoImage,
                 ),
                 SizedBox(
                   height: MediaQuery.of(context).size.height * 0.016, //25
@@ -123,17 +123,17 @@ class SignIn extends StatelessWidget {
                     child: Text.rich(
                       TextSpan(
                         text: ConstantText.dontHaveAnAccountText,
-                        style: TextStyle(
-                          color: CustomColors.whiteColor,
+                        style: Style.whiteColorText.copyWith(
                           fontSize: MediaQuery.of(context).size.width * 0.039,
                         ),
                         children: <InlineSpan>[
                           TextSpan(
                             text: ConstantText.signUpText,
                             style: TextStyle(
-                                fontSize:
-                                    MediaQuery.of(context).size.width * 0.039,
-                                color: CustomColors.blueColor),
+                              fontSize:
+                                  MediaQuery.of(context).size.width * 0.039,
+                              color: CustomColors.blueColor,
+                            ),
                           )
                         ],
                       ),

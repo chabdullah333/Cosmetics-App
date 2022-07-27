@@ -1,3 +1,4 @@
+import 'package:daxno_tech_app/Utils/images.dart';
 import 'package:flutter/material.dart';
 
 import '../../../Utils/colors.dart';
@@ -26,7 +27,7 @@ class ContainerAllProducts extends StatelessWidget {
             child: Container(
               width: MediaQuery.of(context).size.width * 0.288, //103
               height: MediaQuery.of(context).size.height,
-              child: Image.asset("Assets/Images/faceCleaner.png"),
+              child: Image.asset(CustomImages.faceCleanerImage),
             ),
           ),
           Row(
@@ -54,19 +55,19 @@ class ContainerAllProducts extends StatelessWidget {
                     ),
                     Row(
                       children: [
-                        Image.asset("Assets/Images/star.png"),
+                        Image.asset(CustomImages.ratingStarImage),
                         SizedBox(
                             width: MediaQuery.of(context).size.width * 0.014),
-                        Image.asset("Assets/Images/star.png"),
+                        Image.asset(CustomImages.ratingStarImage),
                         SizedBox(
                             width: MediaQuery.of(context).size.width * 0.014),
-                        Image.asset("Assets/Images/star.png"),
+                        Image.asset(CustomImages.ratingStarImage),
                         SizedBox(
                             width: MediaQuery.of(context).size.width * 0.014),
-                        Image.asset("Assets/Images/star.png"),
+                        Image.asset(CustomImages.ratingStarImage),
                         SizedBox(
                             width: MediaQuery.of(context).size.width * 0.014),
-                        Image.asset("Assets/Images/star.png"),
+                        Image.asset(CustomImages.ratingStarImage),
                       ],
                     ),
                     SizedBox(

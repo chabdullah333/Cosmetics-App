@@ -25,7 +25,7 @@ class CustomTextField extends StatelessWidget {
             fontSize: MediaQuery.of(context).size.width * 0.039),
         contentPadding: EdgeInsets.only(
           // top: 10,
-          bottom: 5,
+          bottom: 4,
           left: MediaQuery.of(context).size.width * 0.033,
         ), //left 27,0.075
       ),

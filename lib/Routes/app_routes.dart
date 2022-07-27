@@ -9,12 +9,8 @@ abstract class Routes {
   static const profileScreen = _Paths.profileScreen;
   static const editAccount = _Paths.editAccount;
   static const selectFilter = _Paths.selectFilter;
-static const orderPreviews = _Paths.orderPreviews;
-// static const signUp = _Paths.signUp;
-// static const signUp = _Paths.signUp;
-// static const signUp = _Paths.signUp;
-// static const signUp = _Paths.signUp;
-// static const signUp = _Paths.signUp;
+  static const orderPreviews = _Paths.orderPreviews;
+  static const wishList = _Paths.wishList;
 }
 
 abstract class _Paths {
@@ -25,10 +21,6 @@ abstract class _Paths {
   static const profileScreen = '/profileScreen';
   static const editAccount = '/editAccount';
   static const selectFilter = '/selectFilter';
-static const orderPreviews = '/orderPreviews';
-// static const signUp = '/signUp';
-// static const signUp = '/signUp';
-// static const signUp = '/signUp';
-// static const signUp = '/signUp';
-// static const signUp = '/signUp';
+  static const orderPreviews = '/orderPreviews';
+  static const wishList = '/wishList';
 }

@@ -13,4 +13,8 @@ class CustomColors {
   static const wishListProductDescriptionColor = Color(0xFFE1E4E4);
   static const profileIconColor = Color(0xFF8F8F8F);
   static const dividerColor = Color(0xFFE9E9E9);
+  static const locationContainerColor = Color(0xffA5A5A5);
+  static const darkBlueColor = Color(0xff2B00FF);
+  static const counterContainerColor = Color(0xFFD0D0D0);
+  static const counterNumberColor = Color(0xffBFBFBF);
 }
