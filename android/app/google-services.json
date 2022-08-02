@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "317618469575",
+    "project_id": "cosmetic-app-firestore",
+    "storage_bucket": "cosmetic-app-firestore.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:317618469575:android:b9dcc24d05306e85785ce2",
+        "android_client_info": {
+          "package_name": "com.example.daxno_tech_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "317618469575-hvnnaa895iat0akrrqhi49ssktfc67u5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBeHK8Bbr736ipyxojX6OYXWy-1C2XBxM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "317618469575-hvnnaa895iat0akrrqhi49ssktfc67u5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

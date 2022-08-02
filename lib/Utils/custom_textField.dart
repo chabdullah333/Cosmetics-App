@@ -3,12 +3,23 @@ import 'package:flutter/material.dart';
 import 'colors.dart';
 
 class CustomTextField extends StatelessWidget {
-  CustomTextField({Key? key, required this.hintText}) : super(key: key);
+  CustomTextField({
+    Key? key,
+    required this.hintText,
+    required this.controller,
+    required this.keyboardType,
+    required this.validator,
+  }) : super(key: key);
   String hintText;
+  TextEditingController controller;
+  TextInputType keyboardType;
+  String? Function(String?) validator;
   @override
   Widget build(BuildContext context) {
     return TextFormField(
-      //controller: textFieldController,
+      controller: controller,
+      keyboardType: keyboardType,
+      validator: validator,
       style: TextStyle(
         // fontFamily: 'OpenSansSemiBold',
         color: CustomColors.blackColor,

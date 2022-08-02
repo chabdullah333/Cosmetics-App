@@ -28,7 +28,7 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.signUp,
-      page: () => const SignUp(),
+      page: () => SignUp(),
     ),
     GetPage(
       name: _Paths.bottomNavigationBar,

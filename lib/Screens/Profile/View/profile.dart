@@ -141,7 +141,7 @@ class Profile extends StatelessWidget {
               ),
               GestureDetector(
                 onTap: () {
-                  Get.toNamed(Routes.signIn);
+                  Get.offAllNamed(Routes.signIn);
                 },
                 child: RowProfileInfo(
                   icon: Icons.settings_power,
