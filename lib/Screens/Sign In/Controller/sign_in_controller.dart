@@ -2,7 +2,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-
 import '../../../Routes/app_pages.dart';
 
 class SignInController extends GetxController {
@@ -28,5 +27,11 @@ class SignInController extends GetxController {
     if (isvalue == false) {
       Fluttertoast.showToast(msg: " User Login Failed");
     }
+  }
+
+  @override
+  void onInit() {
+    // TODO: implement onInit
+    super.onInit();
   }
 }

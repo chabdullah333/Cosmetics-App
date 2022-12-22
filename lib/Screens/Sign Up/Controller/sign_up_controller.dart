@@ -1,6 +1,5 @@
 import 'package:daxno_tech_app/Screens/Sign%20Up/Model/sign_up_model.dart';
 import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/get.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
@@ -27,7 +26,6 @@ class SignUpController extends GetxController {
     for (var queryDocumentSnapshot in querySnapshot.docs) {
       Map<String, dynamic> data = queryDocumentSnapshot.data();
       emailList.add(data["email"]);
-
       if (emailController.text == data['email']) {
         isvalue = false;
         update();
